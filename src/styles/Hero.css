@@ -1,0 +1,264 @@
+.hero {
+  padding: 200px;
+  padding-left: -500px;
+  background: rgba(235, 242, 249);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.hero-subtitle {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: -60px;
+  font-weight: 400;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-left: -60px;
+}
+
+.hero-description {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 30px;
+  margin-left: -60px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  margin-left: -60px;
+  
+}
+
+.btn-dark {
+  background: #111827;
+  height: 70px;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background: #3b82f6;
+  color: white;
+  height: 70px;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: -2px;
+  margin-top: 30px;
+}
+
+.hero-services p {
+  font-weight: 350;
+  font-size: 22px;
+  color: #111827;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  margin-left: -60px;
+
+  margin-bottom: 10px;
+
+}
+
+/* CARD */
+
+.hero-card {
+  background: linear-gradient(135deg, #2b2f34, #1f2428);
+  padding: 40px;
+  color: white;
+  padding: 18px;
+  margin: 6px;
+  padding-bottom: 0px;
+}
+
+.hero-card h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #cbd5e1;
+  font-size: 20px;
+}
+
+.hero-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.hero-card select {
+  color: black;
+}
+
+.hero-card input::placeholder {
+  color: black;
+}
+
+.hero-card input[type="text"],
+.hero-card input[type="date"] {
+  color: #111827;
+}
+
+.hero-card input,
+.hero-card select {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255);
+}
+
+.hero-card h4 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.btn-submit {
+  background: #4f86c6;
+  color: white;
+  padding: 34px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 12px;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* space for icon */
+  border-radius: 6px;
+  border: none;
+  background: #e5e7eb;
+  font-size: 14px;
+  color: #111827;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Select arrow */
+.select-group select {
+  appearance: none;
+}
+
+.select-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 20px;
+    min-height: auto; /* Remove full height on mobile */
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-subtitle {
+    margin-top: 50px;
+    margin-left: 6px;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-left: 6px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    margin-left: 6px;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons */
+    width: 100%;
+    margin-left: 6px;
+  }
+
+  .btn-dark,
+  .btn-blue {
+    width: 100%; /* Full width buttons */
+    text-align: center;
+  }
+
+  .hero-card {
+    padding: 25px; /* Reduce card padding */
+  }
+
+  .form-row {
+    grid-template-columns: 1fr; /* Stack inputs */
+  }
+  .btn-submit {
+    /* Reduce submit button padding */
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: -25px; /* Remove negative margins */
+  }
+
+  .hero-services {
+    grid-template-columns: 1fr;
+    margin-left: 60px;
+  }
+}

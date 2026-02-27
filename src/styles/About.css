@@ -1,0 +1,119 @@
+.about {
+  padding: 100px 20px 80px;
+  background: rgba(255, 255, 255);
+  
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+/* Faded Background Text */
+.about-bg-text p {
+  font-size: 120px;
+  font-weight: 900;
+  color: #f1f5f9;
+  margin-bottom: 60px;
+  line-height: 1;
+    margin-top: -60px;
+
+}
+
+/* Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left Content */
+.about-left h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about-left p {
+  font-size: 20px;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 30px;
+
+}
+
+.about-btn {
+  background: rgba(42, 56, 85);
+  color: white;
+  padding: 24px 60px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.about-btn:hover {
+  background: #1f2937;
+}
+
+/* Features Grid */
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.feature-card {
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  padding: 24px;
+  background: white;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+  color: #3b82f6;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: -130px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-bg-text p {
+    font-size: 60px;
+    margin-top: -80px;
+    margin-bottom: 5px;
+  }
+  .feature-card{
+    margin-bottom: 80px;
+  }
+  
+}

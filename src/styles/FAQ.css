@@ -1,0 +1,150 @@
+.faq-section {
+  padding: 120px 20px;
+  background: #f3f4f7; 
+  margin-bottom: -100px;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.faq-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.faq-small-heading {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+.faq-heading {
+  font-size: 48px;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+
+.faq-heading span {
+  color: #4f86c6; /* blue word */
+}
+
+.faq-subtitle {
+  margin-top: 20px;
+  
+  font-size: 22px;
+  color: #8e8e91;
+}
+
+/* Grid */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+
+/* Card */
+.faq-card {
+  background: #ffffff;
+  padding: 28px 35px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.faq-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* Question Row */
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+/* Plus Icon */
+.faq-icon {
+  width: 48px;
+  height: 48px;
+  background: #5b8ecb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.faq-icon:hover {
+  background: #3f75b6;
+}
+
+/* Answer */
+.faq-answer {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.faq-answer p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+/* CTA Section */
+.faq-cta {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.faq-cta h3 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin-bottom: 30px;
+}
+
+/* CTA Button */
+.faq-btn {
+  background: #4f86c6;
+  color: white;
+  padding: 18px 40px;
+  height: -40px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.faq-btn:hover {
+  background: #3f75b6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-heading {
+    font-size: 32px;
+    margin-top: -85px;
+  }
+}

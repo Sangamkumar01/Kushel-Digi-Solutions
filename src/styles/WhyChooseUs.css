@@ -1,0 +1,164 @@
+.why-section {
+  padding: 100px 0; 
+  background: #ffffff;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.why-heading {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #3f3f3f;
+}
+
+.why-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.why-item p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 620px;
+  margin-top: -5px;
+}
+
+/* Green Check Circle */
+.check-icon {
+  width: 22px;
+  height: 22px;
+  background: #22c55e;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+/* Button */
+.why-btn {
+  margin-top: -50px;
+  background: #3d83cb;
+  color: white;
+  padding: 20px 70px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.why-btn:hover {
+  background: #3e75b4;
+}
+
+/* RIGHT */
+.why-right {
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .why-heading {
+        margin-top: -30px;
+    }
+
+  .why-section {
+    padding: 70px 20px;
+  }
+
+  .why-container {
+    padding: 0 20px;
+  }
+
+  /* Stack layout */
+  .why-grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;   /* Stack */
+  }
+
+  /* 🔥 Move image on top */
+  .why-right {
+    order: -1;      /* This moves image above text */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .why-left {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .why-item {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .why-item p {
+    max-width: 100%;
+  }
+
+  .why-btn {
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+
+  /* Resize image properly */
+  .image-wrapper {
+    width: 280px;
+    height: 280px;
+    
+  }
+  .image-wrapper::before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .image-wrapper::after {
+    width: 220px;
+    height: 220px;
+  }
+
+  .why-img {
+    width: 200px;
+  }
+}

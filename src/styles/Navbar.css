@@ -1,0 +1,113 @@
+/* Base Navbar */
+.navbar {
+  position: fixed;   /* stays visible always */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 40px;
+
+}
+
+.navbar-logo {
+  margin-right: 40px;
+  margin-left: -80px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 350;
+  color:black;
+}
+
+.call-button {
+  background: #3b82f6;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+.mobile-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Prevent section hiding behind navbar */
+body {
+  padding-top: 80px;  /* match navbar height */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about,
+#services,
+#portfolio,
+#testimonials,
+#contact {
+  scroll-margin-top: 80px;
+}
+
+/* ========================= */
+/* MOBILE STYLES */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .navbar-menu,
+  .call-button {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+
+    background: white;  /* no white background */
+    box-shadow: none;
+
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobile-link {
+    color: #111;
+    font-weight: 350;
+    padding: 8px 15px;
+    text-decoration: none;
+  }
+  .navbar-logo{
+    margin-left: 0px;
+  }
+}

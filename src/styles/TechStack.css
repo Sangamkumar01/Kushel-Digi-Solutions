@@ -1,0 +1,68 @@
+.tech-section {
+  padding: 100px 20px;
+  background: #f5f5f5;
+}
+
+.tech-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tech-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tech-header h2 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #444;
+}
+
+/* Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+/* White Card */
+.tech-card {
+  background: #ffffff;
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tech-icon {
+  font-size: 50px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .tech-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tech-header h2 {
+    font-size: 28px;
+    margin-top: -50px;
+  }
+}
